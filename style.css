@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 4fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar main";
+}
+
+.header {
+  background-color: #ffffff;
+  grid-area: header;
+  box-shadow: 0 4px 4px #94a3b8;
+  z-index: 1;
+}
+
+.sidebar {
+  background-color: #0ea5e9;
+  grid-area: sidebar;
+  z-index: 1;
+}
+
+.main {
+  background-color: #cbd5e1;
+  grid-area: main;
+}
