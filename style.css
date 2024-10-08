@@ -19,16 +19,85 @@ html {
     "sidebar main";
 }
 
+.sidebar {
+  background-color: #0c95d4;
+  grid-area: sidebar;
+  z-index: 1;
+  display: grid;
+  gap: 32px;
+  color: white;
+  grid-template-rows: auto auto 1fr;
+}
+
+.sidebar button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 16px;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  grid-template-columns: 1fr 6fr;
+  gap: 8px;
+  padding: 12px 28px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+.sidebar button:hover {
+  background-color: #0B87C1;
+}
+
+.sidebar .logo {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-self: start;
+  justify-self: start;
+  gap: 4px;
+  padding: 16px;
+  padding-bottom: 0;
+  padding-left: 12px;
+}
+
+.sidebar .logo .icon {
+  width: 4rem;
+  height: 4rem;
+  transition: 0.5s;
+  filter: invert(1);
+}
+
+.sidebar .logo .icon:hover {
+  transform: rotate(180deg);
+  scale: 1.2;
+}
+
+.sidebar .logo .logo-text {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sidebar .icon:not(.logo .icon) {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(1);
+}
+
+.sidebar .navigation {
+  display: grid;
+}
+
+.sidebar .settings-support {
+  display: grid;
+  align-self: start;
+}
+
 .header {
   background-color: #ffffff;
   grid-area: header;
   box-shadow: 0 4px 4px #94a3b8;
-  z-index: 1;
-}
-
-.sidebar {
-  background-color: #0ea5e9;
-  grid-area: sidebar;
   z-index: 1;
 }
 

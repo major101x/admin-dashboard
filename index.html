@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="header"></div>
-        <div class="sidebar"></div>
-        <div class="main"></div>
+      <div class="header"></div>
+      <div class="sidebar">
+        <div class="logo">
+          <img class="icon" src="./assets/icons/asterisk.svg" alt="asterisk" />
+          <span class="logo-text">Dashboard</span>
+        </div>
+        <div class="navigation">
+          <button>
+            <img class="icon" src="./assets/icons/home.svg" alt="home icon" />
+            <span class="logo-text">Home</span></button
+          ><button>
+            <img
+              class="icon"
+              src="./assets/icons/account.svg"
+              alt="Profile icon"
+            />
+            <span class="logo-text">Profile</span></button
+          ><button>
+            <img
+              class="icon"
+              src="./assets/icons/message.svg"
+              alt="Message icon"
+            />
+            <span class="logo-text">Messages</span></button
+          ><button>
+            <img
+              class="icon"
+              src="./assets/icons/history.svg"
+              alt="History icon"
+            />
+            <span class="logo-text">History</span></button
+          ><button>
+            <img
+              class="icon"
+              src="./assets/icons/check-circle.svg"
+              alt="Tasks icon"
+            />
+            <span class="logo-text">Tasks</span></button
+          ><button>
+            <img
+              class="icon"
+              src="./assets/icons/account-group.svg"
+              alt="Communities icon"
+            />
+            <span class="logo-text">Communities</span>
+          </button>
+        </div>
+        <div class="settings-support">
+          <button>
+            <img
+              class="icon"
+              src="./assets/icons/cog.svg"
+              alt="Settings icon"
+            />
+            <span class="logo-text">Settings</span></button
+          ><button>
+            <img
+              class="icon"
+              src="./assets/icons/help-circle.svg"
+              alt="Support icon"
+            />
+            <span class="logo-text">Support</span></button
+          ><button>
+            <img
+              class="icon"
+              src="./assets/icons/shield-check.svg"
+              alt="Privacy icon"
+            />
+            <span class="logo-text">Privacy</span>
+          </button>
+        </div>
+      </div>
+      <div class="main"></div>
     </div>
-</body>
+  </body>
 </html>
