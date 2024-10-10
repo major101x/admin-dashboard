@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body,
@@ -17,6 +18,7 @@ html {
     "sidebar header"
     "sidebar main"
     "sidebar main";
+  font-family: "Noto Sans", sans-serif;
 }
 
 .sidebar {
@@ -47,7 +49,7 @@ html {
 }
 
 .sidebar button:hover {
-  background-color: #0B87C1;
+  background-color: #0b87c1;
 }
 
 .sidebar .logo {
@@ -99,6 +101,128 @@ html {
   grid-area: header;
   box-shadow: 0 4px 4px #94a3b8;
   z-index: 1;
+  display: grid;
+  padding: 20px 60px;
+  gap: 16px;
+}
+
+.header .search-menu {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-flow: column;
+  gap: 100px;
+}
+
+.header .search-menu button {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+.header .search-menu button:hover {
+  background-color: #dcdcdc;
+}
+
+.header .search-bar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.header .search-bar input {
+  border-radius: 32px;
+  height: 2rem;
+  width: 100%;
+  background-color: #dcdcdc;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+.header .mini-profile {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 24px;
+  align-items: center;
+  justify-self: end;
+}
+
+.header .mini-profile p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.header .mini-profile .profile-picture {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header .action-menu {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 4fr 1fr;
+}
+
+.header .main-profile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header .main-profile .profile-picture {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.header .main-profile .greeting {
+  font-size: 1rem;
+  font-weight: 700;
+  align-self: end;
+}
+
+.header .main-profile .name-username {
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-self: start;
+}
+
+.header .actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.header .actions button {
+  border: none;
+  outline: none;
+  background-color: #0c95d4;
+  border-radius: 32px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 8px 24px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  width: 120px;
+}
+
+.header .actions button:hover {
+  background-color: #0b87c1;
 }
 
 .main {
