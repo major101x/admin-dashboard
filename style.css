@@ -21,7 +21,7 @@ html {
 }
 
 .sidebar {
-  background-color: #0c95d4;
+  background-color: #294023;
   grid-area: sidebar;
   z-index: 1;
   display: grid;
@@ -48,7 +48,7 @@ html {
 }
 
 .sidebar button:hover {
-  background-color: #0b87c1;
+  background-color: #3B5C33;
 }
 
 .sidebar .logo {
@@ -66,11 +66,10 @@ html {
   width: 4rem;
   height: 4rem;
   transition: 0.5s;
-  filter: invert(1);
 }
 
 .sidebar .logo .icon:hover {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   scale: 1.2;
 }
 
@@ -97,9 +96,9 @@ html {
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: #ffeccf;
   grid-area: header;
-  box-shadow: 0 4px 4px #94a3b8;
+  box-shadow: 0 4px 4px #BEA989;
   z-index: 1;
   display: grid;
   padding: 20px 60px;
@@ -125,7 +124,7 @@ html {
 }
 
 .header .search-menu button:hover {
-  background-color: #dcdcdc;
+  background-color: #FFD699;
 }
 
 .header .search-bar {
@@ -139,7 +138,7 @@ html {
   border-radius: 32px;
   height: 2rem;
   width: 100%;
-  background-color: #dcdcdc;
+  background-color: #d2c4ae;
   border: none;
   outline: none;
   padding: 0 20px;
@@ -212,7 +211,7 @@ html {
 .header .actions button {
   border: none;
   outline: none;
-  background-color: #0c95d4;
+  background-color: #294023;
   border-radius: 32px;
   color: white;
   font-size: 1.2rem;
@@ -223,11 +222,11 @@ html {
 }
 
 .header .actions button:hover {
-  background-color: #0b87c1;
+  background-color: #3B5C33;
 }
 
 .main {
-  background-color: #cbd5e1;
+  background-color: #d2c4ae;
   grid-area: main;
   display: grid;
   padding: 36px 24px;
@@ -256,14 +255,14 @@ html {
 }
 
 .main .projects .card {
-  border-left: 8px solid #32292f;
+  border-left: 8px solid #6f553f;
   display: grid;
   grid-template-rows: auto auto 1fr;
   gap: 8px;
-  background-color: #ffffff;
+  background-color: #ffeccf;
   padding: 24px;
   border-radius: 8px;
-  box-shadow: 0 4px 4px #94a3b8;
+  box-shadow: 0 4px 4px #BEA989;
 }
 
 .main .projects .card .title {
@@ -273,7 +272,7 @@ html {
 
 .main .projects .card .description {
   font-size: 0.9rem;
-  color: #7a7a7a;
+  color: #8F5600;
 }
 
 .main .projects .actions {
@@ -296,7 +295,7 @@ html {
 }
 
 .main .projects .actions button:hover {
-  background-color: #dcdcdc;
+  background-color: #FFD699;
 }
 
 .main .announcements {
@@ -307,16 +306,15 @@ html {
 
 .main .announcements .cards {
   display: grid;
-  background-color: #ffffff;
+  background-color: #ffeccf;
   gap: 8px;
   padding: 24px;
   border-radius: 8px;
-  box-shadow: 0 4px 4px #94a3b8;
+  box-shadow: 0 4px 4px #BEA989;
 }
 
 .main .announcements .card {
   display: grid;
-  background-color: #ffffff;
   gap: 4px;
 }
 
@@ -331,7 +329,7 @@ html {
 
 .main .announcements .card .text {
   font-size: 0.8rem;
-  color: #7a7a7a;
+  color: #8F5600;
 }
 
 .main .trending {
@@ -341,10 +339,10 @@ html {
 }
 
 .main .trending .cards {
-  background-color: #ffffff;
+  background-color: #ffeccf;
   padding: 24px;
   border-radius: 8px;
-  box-shadow: 0 4px 4px #94a3b8;
+  box-shadow: 0 4px 4px #BEA989;
   display: grid;
   gap: 16px;
 }
@@ -356,6 +354,11 @@ html {
   align-items: center;
 }
 
+.main .trending .card .details {
+  display: grid;
+  gap: 8px;
+}
+
 .main .trending .card .username {
   font-weight: 600;
   align-self: end;
@@ -363,7 +366,7 @@ html {
 
 .main .trending .card .bio {
   font-size: 0.9rem;
-  color: #7a7a7a;
+  color: #8F5600;
 }
 
 .main .trending .profile-picture {
